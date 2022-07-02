@@ -1,0 +1,30 @@
+1 - Laravel /ui
+2 - باكدج الصلحيات  https://github.com/mindscms/entrust
+3 - باكدج لعمل slug https://github.com/cviebrock/eloquent-sluggable
+4 - باكدج لتعريف الغه العربيه في  slug https://gist.github.com/mindscms/2a4dc91cc8ab14d3beb66495aa72812e
+5- https://github.com/microsoftarchive/redis باكدج redis
+6- composer require predis/predis خاصه redis
+7-  https://github.com/barryvdh/laravel-debugbar خاصه  بللكويري
+8- https://github.com/nicolaslopezj/searchable لعمليه  البحث
+9- https://plugins.krajee.com/file-input  [input] لتحسين  شكل   الصوره
+10 - https://image.intervention.io/v2 للرفع  الصوره  وتحديد  الحجم
+11- https://select2.org/searching    [select] لتحسين شكل  عمليه
+12 - https://summernote.org/getting-started/ [Description] اضافة لكتابه
+13- https://amsul.ca/pickadate.js/ لكتابه  date
+14 - https://github.com/dr5hn/countries-states-cities-database/blob/master/sql/world.sql لجلب  بينات المدن  والمحفظات
+15 -https://github.com/bassjobsen/Bootstrap-3-Typeahead [select] للبحث  داخل
+16 - composer require livewire/livewire
+17 - https://github.com/mindscms/LaravelShoppingcart
+18 - https://github.com/jantinnerezo/livewire-alert لعمل  الرسائل
+19 - https://alpinejs.dev/essentials/installation
+20 - https://github.com/thephpleague/omnipay
+21 - composer require realrashid/sweet-alert لعمل  الرسائل
+22 - https://beyondco.de/docs/laravel-websockets/getting-started/installation لعمل  اشعارات الموقع
+
+Facilitator :
+yousef15557033@business.example.com
+12345678
+
+Buyer :
+sb-h9bot15553254@personal.example.com
+0123456789

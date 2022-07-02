@@ -1,0 +1,32 @@
+php artisan mi:f --seed
+composer dumpautoload
+php artisan clear-compiled
+php artisan view:clear
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+
+
+redis-cli
+FLUSHALL
+exit
+composer dumpautoload
+
+
+php artisan route:cache
+
+
+
+php artisan queue:work
+php artisan websockets:serve
+
+
+
+
+
+
+
+
+
+
+
