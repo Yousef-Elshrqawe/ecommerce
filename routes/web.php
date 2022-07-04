@@ -13,6 +13,7 @@ Route::get('/shop/tags/{slug}', [Frontend\FrontendController::class, 'shop_tag']
 Route::get('/product/{slug?}', [Frontend\FrontendController::class, 'product'])->name('frontend.product');
 Route::get('/cart', [Frontend\FrontendController::class, 'cart'])->name('frontend.cart');
 Route::get('/wishlist', [Frontend\FrontendController::class, 'wishlist'])->name('frontend.wishlist');
+Route::get('/footer', [Frontend\FrontendController::class, 'footer'])->name('frontend.footer');
 
 
 Route::group(['middleware' => ['roles', 'role:customer|admin|supervisor']], function () {

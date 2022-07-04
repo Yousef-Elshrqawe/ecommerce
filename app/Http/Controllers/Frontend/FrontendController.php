@@ -16,20 +16,27 @@ class FrontendController extends Controller
     {
         $product_categories = ProductCategory::whereStatus(1)->whereNull('parent_id')->get();
         $sliders = Slide::find(1);
+        $socialMedia = Social_media::all();
 
 
-        return view('frontend.index' , compact('product_categories' , 'sliders'));
+
+
+        return view('frontend.index' , compact('product_categories' , 'sliders' , 'socialMedia'));
     }
 
 
 
     public function shop($slug = null)
     {
-        return view('frontend.shop',compact('slug'));
+        $socialMedia = Social_media::all();
+
+        return view('frontend.shop',compact('slug' , 'socialMedia'));
     }
     public function shop_tag($slug = null)
     {
-        return view('frontend.shop_tags',compact('slug'));
+        $socialMedia = Social_media::all();
+
+        return view('frontend.shop_tags',compact('slug' , 'socialMedia'));
     }
 
     public function product($slug)
@@ -41,15 +48,25 @@ class FrontendController extends Controller
             $query->whereId($product->product_category_id);
             $query->whereStatus(true);
         })->inRandomOrder()->Active()->HasQuantity()->take(4)->get();
-        return view('frontend.product' , compact('product' , 'relatedProducts' ));
+        $socialMedia = Social_media::all();
+
+        return view('frontend.product' , compact('product' , 'relatedProducts'  , 'socialMedia'));
     }
     public function cart()
     {
-        return view('frontend.cart');
+        $socialMedia = Social_media::all();
+
+        return view('frontend.cart' , compact('socialMedia'));
     }
     public function wishlist()
     {
-        return view('frontend.wishlist');
+        $socialMedia = Social_media::all();
+        return view('frontend.wishlist' , compact('socialMedia'));
+    }
+    public function footer()
+    {
+        $socialMedia = Social_media::all();
+        return view('partial.frontend.footer' , compact('socialMedia'));
     }
 
 

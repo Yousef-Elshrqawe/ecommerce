@@ -18,9 +18,9 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(WorldSeeder::class);
         $this->call(SlideSeeder::class);
-
         $this->call(WorldStatusSeeder::class);
         $this->call(EntrustSeeder::class);
+        $this->call(SocialMediaSeeder::class);
         $this->call(UserAddressSeeder::class);
         $this->call(ProductCategorySeeder::class);
         $this->call(TagSeeder::class);
